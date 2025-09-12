@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Cart</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/cart.css">
+</head>
+
+<body>
+     <header>
+       <nav class="navbar border-bottom" id="navbar-boder">
+        <div class="container-fluid">
+          <a class="navbar-brand">APNA SHOPPING </a>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" id="search">
+            <button class="btn btn-outline-success" type="submit" id="searchButton">Search</button>
+          </form>
+            <ul class=" d-flex gap-5 link">
+                
+                <i class="fa-regular fa-heart icon" ></i>
+                <i class="fa-solid fa-cart-shopping icon"></i>
+                <!-- <i class="fa-regular fa-user icon" id="userInfo"></i> -->
+                <!-- <p id="userInfo">Login With Google</p> -->
+   <span class="profile-container">
+  <i class="fa-regular fa-user icon profile-icon" ></i>
+  <!-- <img src="profile.jpg" alt="Profile" class="profile-icon" /> -->
+  <div class="user-info-box" id="userInfoBox">
+    <button class="loginwithGoogle" id="userInfo">Login With Google</button>
+    <p id="userName" class="mt-2"></p>
+    <p id="userEmail"></p>
+    <button class="signOut" id="userSingOut">SingOut</button>
+    
+  </div>
+</span>
+               
+            </ul> 
+        </div>
+      </nav>
+    </header>
+
+    <div class="container mt-5" id="productDetail">
+        <!-- print product details  -->
+         
+    </div>
+    <script src="Scripts/cart/cart.js" type="module"></script>
+</body>
+
+</html>
