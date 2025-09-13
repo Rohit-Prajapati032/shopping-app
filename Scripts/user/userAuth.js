@@ -1,5 +1,6 @@
 // this file will do the login with firebase oauth gmail
 import { getAuth, signInWithPopup, GoogleAuthProvider, signOut } from "https://www.gstatic.com/firebasejs/12.2.1/firebase-auth.js";
+import { app } from "./userFirebaseConfig.js";
 export const loginWithGoogle = async () => {
 
 
@@ -27,7 +28,7 @@ export const loginWithGoogle = async () => {
 
 
 export const singOut = async () => {
-    const auth = getAuth();
+    const auth = getAuth(app);
     await signOut(auth).then((res) => {
         // Sign-out successful.
         console.log("singOut  successfully", res);
