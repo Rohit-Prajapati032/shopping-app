@@ -17,7 +17,6 @@ profileIcon.addEventListener('mouseleave', () => {
         }
     }, 200);
 });
-
 userInfoBox.addEventListener('mouseleave', () => {
     userInfoBox.style.display = 'none';
 });

@@ -92,7 +92,9 @@
 .icon:hover {
   color: rgb(137, 11, 59);
 }
-
+.carosal{
+  height: 50vh;
+}
 .row {
   display: flex;
   justify-content: center;
@@ -104,6 +106,10 @@
   width: 18rem;
   height: 22rem;
   cursor: pointer;
+}
+.productCard:hover{
+  transform: scale(1.01);
+  transition: 5ms;
 }
 
 .productImage {
@@ -136,5 +142,8 @@
 @media (max-width: 500px) {
  .link{
   margin-top: 1.2em;
+ }
+ .carosal{
+  height: 30vh;
  }
 }

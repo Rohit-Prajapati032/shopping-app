@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Buy Product</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Bootstrap CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/productBuy.css">
+</head>
+<body>
+ <nav class="navbar border-bottom" id="navbar-boder">
+      <div class="container-fluid">
+        <a class="navbar-brand">APNA SHOPPING </a>
+      </div>
+    </nav>
+
+    
+<div class="container my-5">
+  <div class="row">
+    <!-- Product Info -->
+    <div class="col-md-8">
+      <h4>Product Details</h4>
+      <div class="card p-3 mb-3 d-flex flex-row gap-3 align-items-center">
+        <img id="product-image" src="" alt="Product" class="img-thumbnail" style="width: 120px;">
+        <div>
+          <h5 id="product-title"></h5>
+          <p><strong>Price:</strong> ₹<span id="product-price"></span></p>
+          <p><strong>Rating:</strong> <span id="product-rating"></span> ⭐️ (based on <span id="rating-count"></span> reviews)</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Order Summary -->
+    <div class="col-md-4">
+      <h4>Order Summary</h4>
+      <div class="border p-3 rounded">
+        <div class="d-flex justify-content-between">
+          <span>Product Price</span>
+          <span>₹<span id="summary-price"></span></span>
+        </div>
+        <div class="d-flex justify-content-between">
+          <span>Discount</span>
+          <span class="text-success">- ₹2</span>
+        </div>
+        <hr>
+        <div class="d-flex justify-content-between fw-bold">
+          <span>Total</span>
+          <span>₹<span id="order-total"></span></span>
+        </div>
+        <button class="btn btn-primary w-100 mt-3">Continue</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Bootstrap JS + your script -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="Scripts/productBuy/productBuy.js" type="module"></script>
+</body>
+</html>
